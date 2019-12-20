@@ -88,7 +88,7 @@
   /* 메뉴영역 */
   #gnb_wrap{
       width: 1200px;
-      height: 50px;
+      height: 35px;
       /* background: #ccc; */
       margin: 0 auto;
   }
@@ -99,11 +99,14 @@
       position: relative;
       float: left;
       width: 150px;
-      height: 50px;
+      height: 35px;
       box-sizing: border-box;
-      line-height: 50px;
+      line-height: 35px;
       /* background: #ccc; */
       font-weight: bold;
+  }
+  #main_gnb .depth1 > li > a{
+      font-size: 14px;
   }
   #main_gnb .depth1 > li a{
       display: block;
@@ -117,12 +120,15 @@
       font-weight: 100;
       display: none;
       position: absolute;
-      top: 50px;
+      top: 35px;
       left: 0;
       z-index: 1;
       width: 100%;
       background: #fff;
       /* outline: 1px solid red; */
+  }
+  .depth2  a{
+      font-size: 12px;
   }
   /* 배너영역 */
   #main_banner{
@@ -226,6 +232,7 @@
     margin-top: 80px;
   }
   #best h1{
+      font-size: 28px;
       padding: 12px 0;
       color: #352407;
   }
@@ -298,9 +305,10 @@
   }
   /* 브랜드추천 */
   #brand{
+      position: relative;
       text-align: center;
       height: 460px;
-      outline: 1px solid red;
+      /* outline: 1px solid red; */
       margin-top: 80px;
   }
   #brand h1{
@@ -308,18 +316,61 @@
       width: 1200px;
       height: 80px;
       line-height: 75px;
+      font-size: 28px;
   }
   #brand .br_col{
+    /* outline: 1px solid red; */
     width: 380px;
     height: 380px;
     float: left;
     margin-right: 30px;
-    text-align: left;
+    text-align: center;
   }
   #brand .br_col:last-child{
     margin-right: 0;
   }
-
+  #brand .br_col1{
+      background-image: url(../images/br1.jpg);
+      background-repeat: no-repeat;
+  }
+  #brand .br_col2{
+    background-image: url(../images/br1.jpg);
+    background-repeat: no-repeat;
+  }
+  #brand .br_col3{
+    background-image: url(../images/br1.jpg);
+    background-repeat: no-repeat;
+  }
+  #brand .br_hash{
+      margin-top: 170px;
+      margin-left: 15px;
+  }
+  .br_hash .hash{
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      display: block;
+      width: 100px;
+      height: 25px;
+      margin-bottom: 10px;
+  }
+  .br_text{
+      margin-top: 28px;
+      /* outline: 1px solid red; */
+  }
+  .br_text > p{
+      width: 60px;
+      border: 1px solid #666;
+      border-radius: 50px;
+      display: inline-block;
+      font-size: 12px;
+  }
+  .br_text > h3{
+      margin-top: 4px;
+      color: #000;
+  }
+  .br_text > date{
+      font-size: 14px;
+  }
 
   /* 푸터 */
   #main_footer{
