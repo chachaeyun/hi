@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>멍켓</title>
+    <!-- 사용자 css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap" rel="stylesheet">
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/603c6d55f7.js" crossorigin="anonymous"></script>
+    <!-- 제이쿼리 -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- bx 슬라이더 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- 사용자 js -->
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+    <!-- 헤더영역 -->
+    <header id="main_header">
+        <a href="#"><img src="images/e_logo.png" alt="logo"></a>
+        <form action=""id="search_box">
+            <input 
+            type="text"
+            placeholder="메리개리스마스! 겨울 산책용품 특가"
+            >
+            <button type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+            <a href="#" class="util_banner"><img src="http://placeimg.com/180/50" alt=""></a>
+            <nav id="util_menu">
+                <a href="#">LOGIN</a>
+                <a href="#">JOIN US</a>
+                <a href="#"><img src="images/my_icon.png" alt="my"></a>
+                <a href="#"><img src="images/cart_icon.png" alt="cart"></a>
+                <a href="#"><img src="images/car_icon.png" alt="car"></a>
+            </nav>
+        </form>
+    </header>
+     <!-- 메뉴영역 -->
+     <div id="gnb_wrap">
+        <nav id="main_gnb">
+            <ul class="depth1">
+                <li>
+                    <a href="#">FOOD</a>
+                    <ul class="depth2">
+                        <li><a href="#">생식</a></li>
+                        <li><a href="#">화식</a></li>
+                        <li><a href="#">특식</a></li>
+                        <li><a href="#">동결건조</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">TREAT</a>
+                    <ul class="depth2">
+                        <li><a href="#">건조간식</a></li>
+                        <li><a href="#">뼈간식</a></li>
+                        <li><a href="#">츄간식</a></li>
+                        <li><a href="#">디저트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">HOME</a>
+                    <ul class="depth2">
+                        <li><a href="#">하우스</a></li>
+                        <li><a href="#">쿠션</a></li>
+                        <li><a href="#">담요</a></li>
+                        <li><a href="#">식기</a></li>
+                        <li><a href="#">계단</a></li>
+                        <li><a href="#">배변패드</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">WALK</a>
+                    <ul class="depth2">
+                        <li><a href="#">하네스</a></li>
+                        <li><a href="#">목줄</a></li>
+                        <li><a href="#">리드줄</a></li>
+                        <li><a href="#">인식표</a></li>
+                        <li><a href="#">산책가방</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">WEAR</a>
+                    <ul class="depth2">
+                        <li><a href="#">탑</a></li>
+                        <li><a href="#">팬츠</a></li>
+                        <li><a href="#">올인원</a></li>
+                        <li><a href="#">원피스</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">PLAY</a>
+                    <ul class="depth2">
+                        <li><a href="#">라텍스</a></li>
+                        <li><a href="#">소프트</a></li>
+                        <li><a href="#">터그</a></li>
+                        <li><a href="#">원반</a></li>
+                        <li><a href="#">노즈워크</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">CARE</a>
+                    <ul class="depth2">
+                        <li><a href="#">목욕</a></li>
+                        <li><a href="#">건조</a></li>
+                        <li><a href="#">치아관리</a></li>
+                        <li><a href="#">피부관리</a></li>
+                        <li><a href="#">영양제</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 배너영역 -->
+    <div id="main_banner">
+        <div class="inner">
+        <div class="bx-slider">
+            <a href="#"><img src="images/banner1.jpg" alt="banner1"></a>
+            <a href="#"><img src="images/banner2.jpg" alt="banner2"></a>
+            <a href="#"><img src="images/banner3.jpg" alt="banner3"></a>
+        </div>
+        </div>
+    </div>
+
+    <!-- 세일영역 -->
+    <div id="sale_contents" class="w_m">
+        <div class="col1 col">
+            <h1>SALE<br>TODAY</h1>
+
+            <p>오늘 단 하루의 찬스 <br>고민은 배송만 늦출뿐</p>
+        </div>
+        <div class="col2 col">
+            <a href="#">
+                <img src="images/sale1.jpg" alt="sale1">
+                <span class="name">춥다고 산책을 멈출순 없다</span>
+                <span class="inform">칼바람 부는 한겨울에도 포기할 수 없는 산책<br>코듀로이 소재의 하네스로 든든하게 산책의 동반자가 될게요!</span>
+                <del class="origin_price">28,000원</del>
+                <span class="sale_price"><strong>21,000원</strong></span>
+            </a>
+        </div>
+        <div class="col3 col">
+            <a href="#">
+                <img src="images/sale2.jpg" alt="sale1">
+                <span class="name">유기농 포우밤으로 촉촉한 발바닥</span>
+                <span class="inform">차가운 눈, 얼음으로부터 소중한 발바닥을 지켜내자<br>손상 회복 뿐만아니라 촉촉함과 부드러움까지</span>
+                <del class="origin_price">32,000원</del>
+                <span class="sale_price"><strong>25,000원</strong></span>
+            </a>
+        </div>
+    </div>
+    <!-- 베스트셀러 -->
+    <div id="best" class="w_m">
+        <h1>베스트셀러</h1>
+        <nav id="b_category">
+            <a href="#" id="w_btn">WEAR</a>
+            <a href="#" id="f_btn">FOOD</a>
+            <a href="#" id="t_btn">TREAT</a>
+        </nav>
+        <!-- 상품들 -->
+        <section id="wear" class="b_cat">
+            <div class="b_col1 b_col">
+                <a href="#">
+                    <img src="images/w1.jpg" alt="w1">
+                    <span class="title">Bite me</span>
+                    <span class="name">보아후리스 집업자켓</span>
+                    <span class="inform">폭신폭신 부드럽고 기분 좋은 보아 후리스 재킷입니다. 따뜻한 착용가과 포근하고 소프트한 감촉으로 추운 날씨 산책에도 스타일과 활동성 모두 즐길 수 있어요.</span>
+                    <span class="price"><strong>24,000원</strong></span>
+                </a>
+            </div>
+            <div class="b_col2 b_col">
+                <a href="#">
+                    <img src="images/w2.jpg" alt="w2">
+                    <span class="title">Anotheru</span>
+                    <span class="name">마벨 리본 드레스</span>
+                    <span class="inform">심플하고 고급진 원피스를 소개할게요. 탈부착 가능한 고급 수입 리본 브로치로 원하는 위치에 포인트를 줄 수 있고 따뜻한 안감으로 보온성을 높였습니다.</span>
+                    <span class="price"><strong>34,800원</strong></span>
+                </a>
+            </div>
+            <div class="b_col3 b_col">
+                <a href="#">
+                    <img src="images/w3.jpg" alt="w3">
+                    <span class="title">Terrylatte</span>
+                    <span class="name">윈터베어후리스</span>
+                    <span class="inform">솜사탕처럼 가볍고 보들보들 따수운 양면 보아 후리스 원단으로 제작된 베어후리스로 크리미한 컬러감의 베어 배색 귀 디테일이 매력적인 제품입니다.</span>
+                    <span class="price"><strong>37,800원</strong></span>
+                </a>
+            </div>
+            <div class="b_col4 b_col">
+                <a href="#">
+                    <img src="images/w4.jpg" alt="w4">
+                    <span class="title">Carmine</span>
+                    <span class="name">쁘띠 커스텀 목도리</span>
+                    <span class="inform">부드러운 소재감으로 겨울내내 기분좋게 함꼐하기 좋은 데일리 머플러 아이템입니다. 포근한 두께감과 소재감으로 따뜻하고 부드럽게 착용 가능한 제품이예요</span>
+                    <span class="price"><strong>28,800원</strong></span>
+                </a>
+            </div>
+        </section>
+        <section id="food" class="b_cat">
+            <div class="b_col1 b_col">
+                <a href="#">
+                    <img src="images/f1.jpg" alt="f1">
+                    <span class="title">UGLUGL</span>
+                    <span class="name">제주 친환경 야채 믹스 샐러드</span>
+                    <span class="inform">제주 유기농 단호박, 당근, 브로콜리, 양배추를 섞어 만든 제주 야채믹스예요. 제주도 바닷바람을 맞으며 자란 야채들은 뛰어난 영양소를 자랑합니다.</span>
+                    <span class="price"><strong>4,500원</strong></span>
+                </a>
+            </div>
+            <div class="b_col2 b_col">
+                <a href="#">
+                    <img src="images/f2.jpg" alt="f2">
+                    <span class="title">Biteme</span>
+                    <span class="name">바잇밀 -치킨/오리/말고기</span>
+                    <span class="inform">적절한 원재료 크기 손질로 소화가 용이하도록 조리 및 레시피를 설계했습니다. 식이섬유가 풍부한 야채는 소화가 쉽도록 최대한 잘게 잘라서 조리하였습니다.</span>
+                    <span class="price"><strong>214,800원</strong></span>
+                </a>
+            </div>
+            <div class="b_col3 b_col">
+                <a href="#">
+                    <img src="images/f3.jpg" alt="f3">
+                    <span class="title">scoop543</span>
+                    <span class="name">뼈있는 야채 1kg</span>
+                    <span class="inform">무항생제 통닭, 통오리, 통청둥오리와 토끼의 기름을 정리한 후 목뼈를 제외한 뼈와 살을 통채로 갈아낸 생식입니다. 야채가 첨가되어 영양과 맛을 풍부하게 합니다.</span>
+                    <span class="price"><strong>36,000원</strong></span>
+                </a>
+            </div>
+            <div class="b_col4 b_col">
+                <a href="#">
+                    <img src="images/f4.jpg" alt="f4">
+                    <span class="title">Bigdog</span>
+                    <span class="name">빅바이트 캥거루 490g</span>
+                    <span class="inform">생식을 동결건조하여 급여가 편리하며, 최소한의 가공으로 영양을 그대로 담았기에 유해첨가물과 합성 원료가 없습니다.</span>
+                    <span class="price"><strong>44,000원</strong></span>
+                </a>
+            </div>
+        </section>
+        <section id="treat" class="b_cat">
+            <div class="b_col1 b_col">
+                <a href="#">
+                    <img src="images/t1.jpg" alt="t1">
+                    <span class="title">Biteme</span>
+                    <span class="name">오리육포 100g</span>
+                    <span class="inform">반려동물의 피부와 피를 맑게 해주는 오리고기로 만든 순수 오리육포입니다. 불포화지방산과 필수 아미노산이 풍부해 원기회복에도 좋습니다.</span>
+                    <span class="price"><strong>10,000원</strong></span>
+                </a>
+            </div>
+            <div class="b_col2 b_col">
+                <a href="#">
+                    <img src="images/t2.jpg" alt="t2">
+                    <span class="title">Bokseul</span>
+                    <span class="name">황태스틱</span>
+                    <span class="inform">기력회복, 시력향상, 변비예방, 노견적극추천<br>신선한 채소에 황태를 곱게 다져 스틱모양으로 만들어 기호성이 좋습니다.</span>
+                    <span class="price"><strong>5,500원</strong></span>
+                </a>
+            </div>
+            <div class="b_col3 b_col">
+                <a href="#">
+                    <img src="images/t3.jpg" alt="t3">
+                    <span class="title">Snacklab</span>
+                    <span class="name">스낵랩 개곤봉</span>
+                    <span class="inform">오리도가니에 두툼하게 오리안심살, 다진당근을 붙여 건조해서 건조 후에도 통통한 개곤봉을 맛볼 수 있습니다.<br>혼자 있을 아이에게 주기 딱 좋은 간식입니다.</span>
+                    <span class="price"><strong>5,50원</strong></span>
+                </a>
+            </div>
+            <div class="b_col4 b_col">
+                <a href="#">
+                    <img src="images/t4.jpg" alt="t4">
+                    <span class="title">Sweetpet</span>
+                    <span class="name">캥거루꼬리</span>
+                    <span class="inform">호주 청정 자연에서 자란 캥거루는 콜라겐이 풍부하여 피부보습, 근육의 탄력성 유지에 도움을 줍니다. 또한 축적된 지방을 분해하는 기능을 합니다.</span>
+                    <span class="price"><strong>8,500원</strong></span>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- 브랜드 추천 -->
+    <div id="brand" class="w_m">
+        <h1>브랜드추천</h1>
+        <div class="br_col1 br_col">
+            <a href="#">
+                <img src="http://via.placeholder.com/380x380" alt="">
+            </a>
+        </div>
+        <div class="br_col2 br_col">
+            <a href="#">
+                <img src="http://via.placeholder.com/380x380" alt="">
+            </a>
+        </div>
+        <div class="br_col3 br_col">
+            <a href="#">
+                <img src="http://via.placeholder.com/380x380" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main_footer" class="w_m">
+        <p>footer</p>
+    </footer>
+</body>
+</html>
