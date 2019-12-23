@@ -65,8 +65,8 @@ $(function(){
         $('#wear').css('display','none')
         // 색
         $('#f_btn').css('color','#614008')
-        $('#w_btn').css('color','#666')
-        $('#t_btn').css('color','#666')
+        $('#w_btn').css('color','#BBBBBB')
+        $('#t_btn').css('color','#BBBBBB')
         return false;
       });
     $('#t_btn').click(function(){
@@ -75,8 +75,8 @@ $(function(){
         $('#wear').css('display','none')
         // 색
         $('#t_btn').css('color','#614008')
-        $('#f_btn').css('color','#666')
-        $('#w_btn').css('color','#666')
+        $('#f_btn').css('color','#BBBBBB')
+        $('#w_btn').css('color','#BBBBBB')
         return false;
       });
     
