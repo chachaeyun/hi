@@ -41,6 +41,7 @@ $(function(){
       controls: true,        // prev, next 표시/비표시
       pager: true,           // 하단 인디케이터 표시/비표시
       responsive: false,
+      autoHover: true        //마우스 올라가면 재생 
     });
   
   });
