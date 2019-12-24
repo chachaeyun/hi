@@ -172,16 +172,16 @@
     }
 
   /* 배너영역 */
-  #main_banner{
-      position: relative;
-      width: 1920px;
-      height: 600px;
-      margin: 0 auto;
-      overflow: hidden;
+/* 메인배너 */
+#main_banner { 
+    clear: both;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
   }
   /* 배경 높이값 고정 & 위치 중앙 고정 */
   #main_banner .inner{
-    width: 1920px; height: 600px;
+    width: 1920px; height: 400px;
     position: absolute;
     /* 중앙정렬 */
     left: 50%; top: 50%;
