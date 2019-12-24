@@ -54,8 +54,8 @@ $(function(){
         $('#treat').removeClass('show')
         // 색
         $('#w_btn').css('color','#614008')
-        $('#f_btn').css('color','#666')
-        $('#t_btn').css('color','#666')
+        $('#f_btn').css('color','#BBBBBB')
+        $('#t_btn').css('color','#BBBBBB')
         //위로 올라가는거 막는것
         return false;
       });
