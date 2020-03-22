@@ -53,10 +53,14 @@
   }
   #main_header .util_banner{
       display: inline-block;
-    position: absolute;
-    right: 25px;
-    top: 10px;
+      position: absolute;
+      right: 25px;
+      top: -10px;
   }
+#main_header .util_banner img{
+    width: 180px;
+}
+    
 
   /* 검색박스 */
   #search_box{
@@ -145,7 +149,7 @@
         height: 330px;
         z-index: 99;
         display: none;
-        box-shadow: 2px 3px 3px rgba(0,0,0,0.3);
+        box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
     }
     #category dl {
         float: left;
@@ -181,7 +185,7 @@
   }
   /* 배경 높이값 고정 & 위치 중앙 고정 */
   #main_banner .inner{
-    width: 1920px; height: 400px;
+    width: 1200px; height: 350px;
     position: absolute;
     /* 중앙정렬 */
     left: 50%; top: 50%;
@@ -200,7 +204,7 @@
   /* 세일영역 */
   #sale_contents{
       height: 500px;
-      margin-top: 80px;
+      margin-top: 10px;
   }
   #sale_contents .col1{
       float: left;
