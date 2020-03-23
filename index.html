@@ -4,322 +4,396 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>호서동물병원</title>
-    <!-- ***** 사이트 미리보기 ***** -->
-    <!-- 사이트 제목 -->
-    <meta property="og:title" content="24시간 365일 호서동물병원">
-    <!-- 사이트 설명 -->
-    <meta name="og:description" content="호서동물병원 홈페이지">
-    <!-- 사이트 대표 이미지 -->
-    <meta property="og:image" content="images/main.jpg">
-    <!-- 웹 아이콘 -->
-    <link rel="shortcut icon" href="./images/logo_small.png">
+    <title>멍켓</title>
     <!-- 사용자 css -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- bs슬라이더 -->
-    <link rel="stylesheet" href="./css/jquery.bxslider.min.css">
-    <!-- <script src="js/main.js"></script> -->
-    <!-- 플로트메뉴 -->
-    <link rel="stylesheet" href="./css/float.css">
+    <!-- 아이콘 이미지 -->
+    <link rel="shortcut icon" href="images/shorticon.jpg">
     <!-- 웹폰트 -->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap" rel="stylesheet">
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/603c6d55f7.js" crossorigin="anonymous"></script>
     <!-- 제이쿼리 -->
     <script src="js/jquery-3.4.1.min.js"></script>
-    <!-- 폰트어썸 -->
-    <script src="https://kit.fontawesome.com/42bc809b80.js" crossorigin="anonymous"></script>
-    <!-- bxslider js -->
-    <script src="js/jquery.bxslider.min.js"></script>
-    <!-- 사용자 자바스크립트 -->
-    <script src="js/maingnb.js"></script>
-    <!-- api -->
-    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <!-- bx 슬라이더 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- 사용자 js -->
+    <script src="js/main.js"></script>
 
 </head>
 <body>
     <!-- 헤더영역 -->
     <header id="main_header">
-        <div id="ex"></div>
-        <div class="container">
-            <h1><a href="index.html"><img src="./images/logo_color.png" alt="logo"></a></h1>
-            <nav id="main_gnb">
-                <ul class="depth1">
-                    <li>
-                        <a href="page1-2.html">병원소개</a>
-                        <ul class="depth2">
-                            <li><a href="#">인삿말</a></li>
-                            <li><a href="#">의료진</a></li>
-                            <li><a href="#">스텝</a></li>
-                            <li><a href="page1-2.html">시설소개</a></li>
-                            <li><a href="page1-3.html">오시는길</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">전문진료</a>
-                        <ul class="depth2">
-                            <li><a href="#">2차진료전문센터</a></li>
-                            <li><a href="#">수술전문센터</a></li>
-                            <li><a href="#">MRI센터</a></li>
-                            <li><a href="#">노령견센터</a></li>
-                            <li><a href="#">종양센터</a></li>
-                            <li><a href="#">재활의학센터</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="page1-1.html">진료안내</a>
-                        <ul class="depth2">
-                            <li><a href="page1-1.html">진료안내</a></li>
-                            <li><a href="#">영상의학과</a></li>
-                            <li><a href="#">외과</a></li>
-                            <li><a href="#">내과</a></li>
-                            <li><a href="#">안과</a></li>
-                            <li><a href="#">치과</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">커뮤니티</a>
-                        <ul class="depth2">
-                            <li><a href="#">공지사항</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">상담예약</a>
-                        <ul class="depth2">
-                            <li><a href="#"></a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <a href="#"><img src="images/e_logo.png" alt="logo"></a>
+        <form action=""id="search_box">
+            <input 
+            type="text"
+            placeholder="메리개리스마스! 겨울 산책용품 특가"
+            >
+            <button type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+        <a href="#" class="util_banner"><img src="images/s_banner.jpg" alt=""></a>
+        <nav id="util_menu">
+            <a href="#">LOGIN</a>
+            <a href="#">JOIN US</a>
+            <a href="#"><img src="images/my_icon.png" alt="my"></a>
+            <a href="#"><img src="images/cart_icon.png" alt="cart"></a>
+            <a href="#"><img src="images/car_icon.png" alt="car"></a>
+        </nav>
     </header>
-    <!-- 배너영역 -->
-    <div id="main_banner">
-        <div class="bxslider">
-            <img src="./images/main_banner.jpg" alt="배너1">
-            <img src="./images/main_banner2.jpg" alt="배너2">
-            <img src="./images/main_banner3.jpg" alt="배너3">
-        </div>
-    </div>
-    <!-- 서브정보 -->
-    <div id="sub_info">
-        <div class="container">
-            <div class="col1">
-                <p class="box">진료<br>안내</p>
-                <span> 02 3665 1870</span>
-                <p class="time">평일 오전 9시 ~ 오후 6시 | 토요일 오전 9시 ~ 오후 2시</p>
-            </div>
-            <div class="col2 col">
-                <a href="#">
-                    <p class="sub_name">줄기세포치료</p>
-                </a>
-            </div>
-            <div class="col3 col">
-                <a href="#">
-                    <p class="sub_name">혈액투석</p>
-                </a>
-            </div>
-            <div class="col4 col">
-                <a href="#">
-                    <p class="sub_name">CT/MRI영상센터</p>
-                </a>
-            </div>
-            <div class="col5 col">
-                <a href="#">
-                    <p class="sub_name">고양이치과</p>
-                </a>
-            </div>
-            <div class="col6 col">
-                <a href="#">
-                    <p class="sub_name">고양이수술센터</p>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- 메인컨텐츠 -->
-    <div id="main_contents">
-        <div class="container">
-            <div class="con1">
-                <p>아픈 반려동물에게 한줄기 빛이 되겠습니다.</p>
-                <span>호서동물병원의 약속</span>
-                <a href="#">자세히 보기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a>
-            </div>
-            <div class="con con2">
-                <span>interior</span>
-                <a href="#"><p>병원둘러보기</p></a>
-            </div>
-            <div class="con con3">
-                <span>medical staff</span>
-                <a href="#"><p>의료진소개</p></a>
-            </div>
-            <div class="con con4">
-                <span>equipment</span>
-                <a href="#"><p>장비소개</p></a>
-            </div>
-        </div>
-    </div>
-    <!-- 센터목록 -->
-    <div id="center">
-        <div class="center_wrap">
-            <a href="#" class="center">
-                <p>골관절센터</p>
-            </a>
-            <a href="#" class="center">
-                <p>종양센터</p>
-            </a>
-            <a href="#" class="center">
-                <p>심장센터</p>
-            </a>
-            <a href="#" class="center">
-                <p>줄기세포센터</p>
-            </a>
-        </div>
-    </div>
-    <!-- 게시판 -->
-    <div id="board">
-        <div class="container">
-            <section class="notice">
-                <h2>호서 공지사항</h2>
-                <div class="line"></div>
-                <ul>
-                    <li>
-                        <a href="#">방광이행상피암 진단에 유용한 'v-BTA' 도입</a>
-                        <span class="date">2020.01.02</span>
-                    </li>
-                    <li>
-                        <a href="#">호서 건강검진 프로그램 안내</a>
-                        <span class="date">2019.12.24</span>
-                    </li>
-                    <li>
-                        <a href="#">호서 수의사 인턴 모집 공고</a>
-                        <span class="date">2019.12.20</span>
-                    </li>
-                    <li>
-                        <a href="#">호서동물병원 주차장 안내</a>
-                        <span class="date">2019.12.02</span>
-                    </li>
-                    <li>
-                        <a href="#">국내 처방식 사료 velixer 입고 안내</a>
-                        <span class="date">2019.11.22</span>
-                    </li>
-                </ul>
-            </section>
-            <section class="review">
-                <h2>호서 수술사례</h2>
-                <div class="line"></div>
-                <ul>
-                    <li>
-                        <a href="#">- 강아지 요척골 골절수술 후 재골절 수술후기</a>
-                        <span class="text">메리는 10일전에 강아지 요척골 골절로 지역병원에서 핀을 삽입하여 교정하는 수술을 받았다고 해요. 이후 입원치료 없이 집에서 관리해주시면서 자주 밖에서 산책을</span>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="#">- 강아지가 개껌을 사켰을 때 '식도이물제거' 진료후기</a>
-                        <span class="text">마루는 간식으로 개껌을 먹고 난 후 기침과 호흡곤란, 구토증상을 보여 호서동물병원에 내원하게 되었습니다. 아무래도 개껌이 목에 걸린 것 같다고 추정할 수는 있었지만 </span>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="#">- 고양이 비닐섭취 선형 이물제거 후기</a>
-                        <span class="text">고양이들은 박스나 비닐 같은 무언가 담는 물건을 이상하리만큼 좋아하죠?그중에서도 비닐은 잘못 삼키게되어 병원에 내원하는 경우가 적지않게 있습니다. 오늘은 이물제거에 </span>
-                    </li>
-                </ul>
-            </section>
-        </div>
-    </div>
-    <!-- 아래배너 -->
-    <section id="bottom">
-        <div class="text">
-            <h2>아이를 안심하고 맡겨도 될지 걱정이신가요?</h2>
-            <p>24시 호서동물병원 시설을 확인해 보세요.</p>
-        </div>
-        <div class="button">
-            <a href="#">시설 및 병원 전경<i class="fas fa-plus"></i></a> 
-            <a href="#">보유의료장비소개<i class="fas fa-plus"></i></a> 
-        </div>
-    </section>
+     <!-- 메뉴영역 -->
+     <div id="gnb_wrap">
+        <nav id="main_gnb">
+            <button class="category_btn"><img src="images/cate.jpg" alt="category"></button>
 
-    <!-- 푸터 -->
-    <footer id="main_footer">
-        <span class="f_line"></span>
-        <div class="container">
-            <ul>
+            <ul class="depth1">
                 <li>
-                    <a href="page1-2.html">
-                        병원소개 <span>&gt;</span>
-                    </a>
+                    <a href="#">FOOD</a>
+                    <ul class="depth2">
+                        <li><a href="#">생식</a></li>
+                        <li><a href="#">화식</a></li>
+                        <li><a href="#">특식</a></li>
+                        <li><a href="#">동결건조</a></li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="#">
-                        온라인상담 <span>&gt;</span>
-                    </a>
+                    <a href="#">TREAT</a>
+                    <ul class="depth2">
+                        <li><a href="#">건조간식</a></li>
+                        <li><a href="#">뼈간식</a></li>
+                        <li><a href="#">츄간식</a></li>
+                        <li><a href="#">디저트</a></li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="#">
-                        개인정보취급방침 <span>&gt;</span>
-                    </a>
+                    <a href="#">HOME</a>
+                    <ul class="depth2">
+                        <li><a href="#">하우스</a></li>
+                        <li><a href="#">쿠션</a></li>
+                        <li><a href="#">담요</a></li>
+                        <li><a href="#">식기</a></li>
+                        <li><a href="#">계단</a></li>
+                        <li><a href="#">배변패드</a></li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="#">
-                        이용약관 <span>&gt;</span>
-                    </a>
+                    <a href="#">WALK</a>
+                    <ul class="depth2">
+                        <li><a href="#">하네스</a></li>
+                        <li><a href="#">목줄</a></li>
+                        <li><a href="#">리드줄</a></li>
+                        <li><a href="#">인식표</a></li>
+                        <li><a href="#">산책가방</a></li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="page1-3.html">
-                        오시는길 <span>&gt;</span>
-                    </a>
+                    <a href="#">WEAR</a>
+                    <ul class="depth2">
+                        <li><a href="#">탑</a></li>
+                        <li><a href="#">팬츠</a></li>
+                        <li><a href="#">올인원</a></li>
+                        <li><a href="#">원피스</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">PLAY</a>
+                    <ul class="depth2">
+                        <li><a href="#">라텍스</a></li>
+                        <li><a href="#">소프트</a></li>
+                        <li><a href="#">터그</a></li>
+                        <li><a href="#">원반</a></li>
+                        <li><a href="#">노즈워크</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">CARE</a>
+                    <ul class="depth2">
+                        <li><a href="#">목욕</a></li>
+                        <li><a href="#">건조</a></li>
+                        <li><a href="#">치아관리</a></li>
+                        <li><a href="#">피부관리</a></li>
+                        <li><a href="#">영양제</a></li>
+                    </ul>
                 </li>
             </ul>
+        </nav>
+    </div>
+    <!-- 카테고리 메뉴 목록 -->
+        <nav id="category">
+            <div class="container w_m">
+                <dl>
+                    <dt><a href="#">FOOD</a></dt>
+                    <dd><a href="#">생식</a></dd>
+                    <dd><a href="#">화식</a></dd>
+                    <dd><a href="#">특식</a></dd>
+                    <dd><a href="#">동결건조</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">TREAT</a></dt>
+                    <dd><a href="#">건조간식</a></dd>
+                    <dd><a href="#">뼈간식</a></dd>
+                    <dd><a href="#">츄간식</a></dd>
+                    <dd><a href="#">디저트</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">HOME</a></dt>
+                    <dd><a href="#">하우스</a></dd>
+                    <dd><a href="#">쿠션</a></dd>
+                    <dd><a href="#">담요</a></dd>
+                    <dd><a href="#">식기</a></dd>
+                    <dd><a href="#">계단</a></dd>
+                    <dd><a href="#">배변패드</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">WALK</a></dt>
+                    <dd><a href="#">하네스</a></dd>
+                    <dd><a href="#">목줄</a></dd>
+                    <dd><a href="#">리드줄</a></dd>
+                    <dd><a href="#">인식표</a></dd>
+                    <dd><a href="#">산책가방</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">WEAR</a></dt>
+                    <dd><a href="#">탑</a></dd>
+                    <dd><a href="#">팬츠</a></dd>
+                    <dd><a href="#">올인원</a></dd>
+                    <dd><a href="#">원피스</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">PLAY</a></dt>
+                    <dd><a href="#">라텍스</a></dd>
+                    <dd><a href="#">소프트</a></dd>
+                    <dd><a href="#">터그</a></dd>
+                    <dd><a href="#">원반</a></dd>
+                    <dd><a href="#">노즈워크</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">CARE</a></dt>
+                    <dd><a href="#">목욕</a></dd>
+                    <dd><a href="#">건조</a></dd>
+                    <dd><a href="#">치아관리</a></dd>
+                    <dd><a href="#">피부관리</a></dd>
+                    <dd><a href="#">영양제</a></dd>
+                </dl>
+            </div><!-- end container -->
+        </nav>
+    <!-- 배너영역 -->
+    <div id="main_banner">
+        <div class="inner">
+        <div class="bx-slider">
+            <a href="#"><img src="images/ban1.jpg" alt="banner1"></a>
+            <a href="#"><img src="images/ban1.jpg" alt="banner2"></a>
+            <a href="#"><img src="images/ban1.jpg" alt="banner3"></a>
         </div>
-        <span class="f_line linet"></span>
-
-        <div class="footer_wrap">
-            <strong class="big"><img width="210px" src="./images/logo_ccc.png" alt=""></strong>
-            <p>호서동물병원</p>
-            <span>|</span>
-            <p>주소 : 157-731 서울특별시 강서구 등촌3동 680-1 호서동물병원</p>
-            <span>|</span>
-            <p>대표자 : 김형석</p>
-            <br>
-            <p>사업자번호 : 295-43-00473</p>
-            <span>|</span>
-            <p>대표전화 : 02-3662-1870</p>
-            <span>|</span>
-            <p>Fax : 02-3662-1870</p>
-            <p class="icon">
-                <a href="#"><img src="images/icon.png" alt="카카오톡"></a>
-                <a href="#"><img src="images/icon2.png" alt="인스타그램"></a>
-                <a href="#"><img src="images/icon3.png" alt="블로그"></a>
-            </p>
-            <p class="copy">Copyright &copy; 2020 <span class="black">HOSEO ANIMAL MEDICAL CENTER</span> .All rights Reserved.</p>
-            <p class="phone">호서동물병원 대표전화 : <span class="number">02.3662.1870</span></p>
         </div>
-    </footer>
-
-    
-    <!-- 플로트메뉴 -->
-    <div class="float">
-        <a href="#" class="float16"><img src="images/f_call.png" alt=""> 3662.1870</a>
-        <a href="page1-3.html" class="floatmenu"><img src="images/f_map.png" alt=""> 오시는길</a>
-        <a href="javascript:void addChannel()" class="floatmenu"><img src="images/f_talk.png" alt=""> 카톡상담</a>
-        <a href="#" class="floatmenu"><img src="images/f_insta.png" alt=""> 인스타그램</a>
-        <a href="#" class="floatmenu"><img src="images/f_pc.png" alt=""> 온라인상담</a>
-        <a href="#" class="float16"><img src="images/f_top.png" alt=""> TOP</a>
     </div>
 
+    <!-- 세일영역 -->
+    <div id="sale_contents" class="w_m">
+        <div class="col1 col">
+            <h1>SALE<br>TODAY</h1>
 
-    <!-- 카카오톡 api 스크립트 -->
-    <script type='text/javascript'>
-        //<![CDATA[
-          // 사용할 앱의 JavaScript 키를 설정해 주세요.
-          Kakao.init('8497101d45f98185da30d67bd8ee5362');
-          function addChannel() {
-            Kakao.Channel.addChannel({
-              channelPublicId: '_xcLqmC' // 채널 홈 URL에 명시된 id로 설정합니다.
-            });
-          }
-        //]]>
-      </script>
+            <p>오늘 단 하루의 찬스 <br>고민은 배송만 늦출뿐</p>
+        </div>
+        <div class="col2 col">
+            <a href="#">
+                <img src="images/sale1.jpg" alt="sale1">
+                <span class="name">춥다고 산책을 멈출순 없다</span>
+                <span class="inform">칼바람 부는 한겨울에도 포기할 수 없는 산책<br>코듀로이 소재의 하네스로 든든하게 산책의 동반자가 될게요!</span>
+                <del class="origin_price">28,000원</del>
+                <span class="sale_price"><strong>21,000원</strong></span>
+            </a>
+        </div>
+        <div class="col3 col">
+            <a href="#">
+                <img src="images/sale2.jpg" alt="sale1">
+                <span class="name">유기농 포우밤으로 촉촉한 발바닥</span>
+                <span class="inform">차가운 눈, 얼음으로부터 소중한 발바닥을 지켜내자<br>손상 회복 뿐만아니라 촉촉함과 부드러움까지</span>
+                <del class="origin_price">32,000원</del>
+                <span class="sale_price"><strong>25,000원</strong></span>
+            </a>
+        </div>
+    </div>
+    <!-- 베스트셀러 -->
+    <div id="best" class="w_m">
+        <h1>베스트셀러</h1>
+        <nav id="b_category">
+            <a href="#" id="w_btn">WEAR</a>
+            <a href="#" id="f_btn">FOOD</a>
+            <a href="#" id="t_btn">TREAT</a>
+        </nav>
+        <!-- 상품들 -->
+        <section id="wear" class="b_cat">
+            <div class="b_col1 b_col">
+                <a href="#">
+                    <img src="images/w1.jpg" alt="w1">
+                    <span class="title">Bite me</span>
+                    <span class="name">보아후리스 집업자켓</span>
+                    <span class="inform">폭신폭신 부드럽고 기분 좋은 보아 후리스 재킷입니다. 따뜻한 착용가과 포근하고 소프트한 감촉으로 추운 날씨 산책에도 스타일과 활동성 모두 즐길 수 있어요.</span>
+                    <span class="price"><strong>24,000원</strong></span>
+                </a>
+            </div>
+            <div class="b_col2 b_col">
+                <a href="#">
+                    <img src="images/w2.jpg" alt="w2">
+                    <span class="title">Anotheru</span>
+                    <span class="name">마벨 리본 드레스</span>
+                    <span class="inform">심플하고 고급진 원피스를 소개할게요. 탈부착 가능한 고급 수입 리본 브로치로 원하는 위치에 포인트를 줄 수 있고 따뜻한 안감으로 보온성을 높였습니다.</span>
+                    <span class="price"><strong>34,800원</strong></span>
+                </a>
+            </div>
+            <div class="b_col3 b_col">
+                <a href="#">
+                    <img src="images/w3.jpg" alt="w3">
+                    <span class="title">Terrylatte</span>
+                    <span class="name">윈터베어후리스</span>
+                    <span class="inform">솜사탕처럼 가볍고 보들보들 따수운 양면 보아 후리스 원단으로 제작된 베어후리스로 크리미한 컬러감의 베어 배색 귀 디테일이 매력적인 제품입니다.</span>
+                    <span class="price"><strong>37,800원</strong></span>
+                </a>
+            </div>
+            <div class="b_col4 b_col">
+                <a href="#">
+                    <img src="images/w4.jpg" alt="w4">
+                    <span class="title">Carmine</span>
+                    <span class="name">쁘띠 커스텀 목도리</span>
+                    <span class="inform">부드러운 소재감으로 겨울내내 기분좋게 함꼐하기 좋은 데일리 머플러 아이템입니다. 포근한 두께감과 소재감으로 따뜻하고 부드럽게 착용 가능한 제품이예요</span>
+                    <span class="price"><strong>28,800원</strong></span>
+                </a>
+            </div>
+        </section>
+        <section id="food" class="b_cat">
+            <div class="b_col1 b_col">
+                <a href="#">
+                    <img src="images/f1.jpg" alt="f1">
+                    <span class="title">UGLUGL</span>
+                    <span class="name">제주 친환경 야채 믹스 샐러드</span>
+                    <span class="inform">제주 유기농 단호박, 당근, 브로콜리, 양배추를 섞어 만든 제주 야채믹스예요. 제주도 바닷바람을 맞으며 자란 야채들은 뛰어난 영양소를 자랑합니다.</span>
+                    <span class="price"><strong>4,500원</strong></span>
+                </a>
+            </div>
+            <div class="b_col2 b_col">
+                <a href="#">
+                    <img src="images/f2.jpg" alt="f2">
+                    <span class="title">Biteme</span>
+                    <span class="name">바잇밀 -치킨/오리/말고기</span>
+                    <span class="inform">적절한 원재료 크기 손질로 소화가 용이하도록 조리 및 레시피를 설계했습니다. 식이섬유가 풍부한 야채는 소화가 쉽도록 최대한 잘게 잘라서 조리하였습니다.</span>
+                    <span class="price"><strong>214,800원</strong></span>
+                </a>
+            </div>
+            <div class="b_col3 b_col">
+                <a href="#">
+                    <img src="images/f3.jpg" alt="f3">
+                    <span class="title">scoop543</span>
+                    <span class="name">뼈있는 야채 1kg</span>
+                    <span class="inform">무항생제 통닭, 통오리, 통청둥오리와 토끼의 기름을 정리한 후 목뼈를 제외한 뼈와 살을 통채로 갈아낸 생식입니다. 야채가 첨가되어 영양과 맛을 풍부하게 합니다.</span>
+                    <span class="price"><strong>36,000원</strong></span>
+                </a>
+            </div>
+            <div class="b_col4 b_col">
+                <a href="#">
+                    <img src="images/f4.jpg" alt="f4">
+                    <span class="title">Bigdog</span>
+                    <span class="name">빅바이트 캥거루 490g</span>
+                    <span class="inform">생식을 동결건조하여 급여가 편리하며, 최소한의 가공으로 영양을 그대로 담았기에 유해첨가물과 합성 원료가 없습니다.</span>
+                    <span class="price"><strong>44,000원</strong></span>
+                </a>
+            </div>
+        </section>
+        <section id="treat" class="b_cat">
+            <div class="b_col1 b_col">
+                <a href="#">
+                    <img src="images/t1.jpg" alt="t1">
+                    <span class="title">Biteme</span>
+                    <span class="name">오리육포 100g</span>
+                    <span class="inform">반려동물의 피부와 피를 맑게 해주는 오리고기로 만든 순수 오리육포입니다. 불포화지방산과 필수 아미노산이 풍부해 원기회복에도 좋습니다.</span>
+                    <span class="price"><strong>10,000원</strong></span>
+                </a>
+            </div>
+            <div class="b_col2 b_col">
+                <a href="#">
+                    <img src="images/t2.jpg" alt="t2">
+                    <span class="title">Bokseul</span>
+                    <span class="name">황태스틱</span>
+                    <span class="inform">기력회복, 시력향상, 변비예방, 노견적극추천<br>신선한 채소에 황태를 곱게 다져 스틱모양으로 만들어 기호성이 좋습니다.</span>
+                    <span class="price"><strong>5,500원</strong></span>
+                </a>
+            </div>
+            <div class="b_col3 b_col">
+                <a href="#">
+                    <img src="images/t3.jpg" alt="t3">
+                    <span class="title">Snacklab</span>
+                    <span class="name">스낵랩 개곤봉</span>
+                    <span class="inform">오리도가니에 두툼하게 오리안심살, 다진당근을 붙여 건조해서 건조 후에도 통통한 개곤봉을 맛볼 수 있습니다.<br>혼자 있을 아이에게 주기 딱 좋은 간식입니다.</span>
+                    <span class="price"><strong>5,500원</strong></span>
+                </a>
+            </div>
+            <div class="b_col4 b_col">
+                <a href="#">
+                    <img src="images/t4.jpg" alt="t4">
+                    <span class="title">Sweetpet</span>
+                    <span class="name">캥거루꼬리</span>
+                    <span class="inform">호주 청정 자연에서 자란 캥거루는 콜라겐이 풍부하여 피부보습, 근육의 탄력성 유지에 도움을 줍니다. 또한 축적된 지방을 분해하는 기능을 합니다.</span>
+                    <span class="price"><strong>8,500원</strong></span>
+                </a>
+            </div>
+        </section>
+    </div>
 
+    <!-- 브랜드 추천 -->
+    <div id="brand" class="w_m">
+        <h1>브랜드추천</h1>
+        <div class="br_col1 br_col">
+            <div class="br_hash">
+                <span class="hash">#겨울나기</span>
+                <span class="hash">#연말파티</span>
+                <span class="hash">#국내제작</span>
+            </div>
+            <div class="br_text">
+                <p>이벤트</p>
+                <a href="#">메리퐁고 겨울아우터 대전</a>
+                <date>12.02~12.09</date>
+            </div>
+        </div>
+        <div class="br_col2 br_col">
+            <div class="br_hash">
+                <span class="hash">#피부보습</span>
+                <span class="hash">#스킨케어</span>
+                <span class="hash">#자연유래성분</span>
+            </div>
+            <div class="br_text">
+                <p>이벤트</p>
+                <a href="#">심플리독 최대 33% 할인</a>
+                <date>12.03~12.09</date>
+            </div>
+        </div>
+        <div class="br_col3 br_col">
+            <div class="br_hash">
+                <span class="hash">#같이여행</span>
+                <span class="hash">#매트로도써요</span>
+                <span class="hash">#폭신폭신</span>
+            </div>
+            <div class="br_text">
+                <p>이벤트</p>
+                <a href="#">배럴즈 강아지 카시트 신규런칭</a>
+                <date>nice to meet you!</date>
+            </div>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main_footer" class="w_m">
+        <div class="footer w_m">
+            <img src="images/logo.png" alt="logo">
+            <p><span class="f_text">대표이사: 차차차 | 사업자등록번호: 211-00-00000 | 통신판매업신고번호: 2019-서울강서-0123 | 개인정보보호책임자: 차차차<br></span>
+                회사명: 멍켓 | 전화: 1544-0123 | 팩스: 02-111-1111 | 이메일: mungket@gmail.com | 주소: 서울시 강서구 디지털로 26길 72,2층<br>
+                Copyright Mungket.com ALL RIGHTS RESERVED. | <strong>개인정보처리방침</strong> | 영상정보처리기기운영방침<br>
+                <br>
+                고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 PG사의 구매안전서비스를 이용하실 수 있습니다.
+
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
