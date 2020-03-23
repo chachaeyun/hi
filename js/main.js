@@ -11,22 +11,13 @@ $(document).ready(function(){
 
 $(function(){
 
-    // 카테고리 버튼
-    $('.category_btn').click(function(){
-      $(this).toggleClass('on');
-    })
-    $('header, section').click(function(){
-      $('.category_btn.on').toggleClass('on');
-      return false;
-    })
-  
     // 카테고리 토글 버튼
     $('.category_btn').click(function(){
-      $('#category').slideToggle();
+      $('#category').slideDown();
      });
   
     // 다른데 누르면 자동으로 닫히기
-    $('header, section').click(function(){
+    $('header, .w_m').click(function(){
       $('#category').slideUp();
       return false;
     })

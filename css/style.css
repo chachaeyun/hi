@@ -180,7 +180,7 @@
 #main_banner { 
     clear: both;
     position: relative;
-    height: 400px;
+    height: 350px;
     overflow: hidden;
   }
   /* 배경 높이값 고정 & 위치 중앙 고정 */
@@ -207,7 +207,6 @@
       margin-top: 10px;
   }
   #sale_contents .col1{
-      float: left;
       width: 312px;
       height: 500px;
       margin-left: 20px;
@@ -223,17 +222,16 @@
       margin-bottom: 10px;
   }
   #sale_contents .col2{
-    float: left;
       width: 370px;
       height: 500px;
   }
   #sale_contents .col3{
-    float: left;
     width: 370px;
     height: 500px;
   }
   #sale_contents .col{
       margin-right: 63px;
+      float: left;
   }
   #sale_contents .col:last-child{
       margin-right: 0;
